@@ -16,7 +16,8 @@ fn main() {
             .expect("Failed to read line…");
 
         // Slice the whole input String
-        // I'm still not sure why it had to be done this way
+        // I'm still not sure why it has to be this way
+        // While we're at it, let's remove leading and trailing whitespace
         let abjad_text_slice: &str = &abjad_text[..].trim();
 
         // Abort early if the user entered Q/q
@@ -31,7 +32,7 @@ fn main() {
         // Create a variable to hold the total abjad value
         let mut abjad_total = 0;
 
-        // Create a Boolean variable to toggle the error message for unrecognized input
+        // Create a Boolean to toggle the error message for unrecognized input
         let mut unrecognized_input = false;
 
         // Iterate through the vector one character at a time
@@ -88,7 +89,8 @@ fn main() {
         println!("{}", abjad_total);
         // Print the error message
         if unrecognized_input {
-            println!("Please double-check your input. Only normal Arabic and Persian letters can be processed.");
+            println!("Please double-check your input. Only normal Arabic and Persian letters will be counted.");
+            println!("Spaces are ignored silently; but you seem to have entered something further afield.");
         }
     }
 }
