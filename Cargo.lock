@@ -4,9 +4,9 @@ version = 3
 
 [[package]]
 name = "abjad"
-version = "0.3.1"
+version = "0.3.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f95472e4bd8a045b100a155ab555673f6b1ac7ba9708d728c91877a9bf120747"
+checksum = "fd6de272c547cae255c73784d0fb37c0a5dc4bcb0faaab26fbe09b06587e394c"
 dependencies = [
  "anyhow",
 ]
@@ -20,6 +20,6 @@ dependencies = [
 
 [[package]]
 name = "anyhow"
-version = "1.0.55"
+version = "1.0.56"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "159bb86af3a200e19a068f4224eae4c8bb2d0fa054c7e5d1cacd5cef95e684cd"
+checksum = "4361135be9122e0870de935d7c439aef945b9f9ddd4199a553b5270b49c82a27"
