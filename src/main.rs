@@ -1,3 +1,6 @@
+#![warn(clippy::pedantic, clippy::nursery)]
+#![allow(clippy::uninlined_format_args)]
+
 use abjad::{Abjad, AbjadPrefs};
 use std::io;
 
@@ -39,7 +42,7 @@ fn main() {
         if !unrecognized.is_empty() {
             let mut unrecognized_concat = String::new();
 
-            for item in unrecognized.iter() {
+            for item in &unrecognized {
                 unrecognized_concat += item;
                 unrecognized_concat += ", ";
             }
